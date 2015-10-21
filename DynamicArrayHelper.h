@@ -1,7 +1,11 @@
 //File: DynamicArrayHelper.h //Created by: S. Schutten, schutten@hotmail.com
  #ifndef DynamicArrayHelper_h
  #define DynamicArrayHelper_h
- #include <wiring.h>
+ #if ARDUINO >= 100
+  #include <Arduino.h>
+ #else
+  #include <wiring.h>
+ #endif
 
 class DynamicArrayHelper {
  public:
